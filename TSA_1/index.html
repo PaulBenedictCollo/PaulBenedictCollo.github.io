@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Benedict Collo Resume</title>
+</head>
+<body>
+    <div class="resume-container">
+        <button type="button" onclick="changeColor()">Change Color</button>
+        <header class="top">  
+            <div class="info">
+                <h1>Paul Benedict V. Collo</h1>
+                <hr> 
+                <p>BSIT - Web and Mobile Applications</p>
+                <p>Address: Sta. Cruz Laguna</p>
+                <p>Email: paulbenedictcollo@gmail.com</p>
+                <p>Mobile: 09192064481</p>
+            </div>
+            <div class="profile-picture">
+                <img src="assests/ColloPicture.png" alt="Profile Picture" />
+            </div>
+        </header>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                A programming student specializing in web and mobile applications.
+                An enthusiastic and collaborative individual with a strong ability to communicate 
+                and work effectively in group settings. I actively participated in organizations 
+                to foster personal growth and enhance my interpersonal skills.
+            </p>
+        </section>
+
+        <div class="content">
+            <section class="left-section">
+                <h2>Academic Background</h2>
+                <p><strong>Pedro Guevara Memorial National High School (2017 -2021)</strong></p>
+                <p><strong>Laguna Senior High School (2021-2023)</strong></p>
+                <p><strong>FEU Institute of Technology (2023 - Present)</strong></p>
+            </section>
+
+            <section class="right-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Adobe Photoshop</li>
+                    <li>People Skills</li>
+                    <li>Communication Skills</li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
+    
+    <script>
+        function changeColor() {
+            let resumeContainer = document.querySelector('.resume-container');
+            let isColorDark = resumeContainer.classList.toggle('dark-theme');
+            
+            if (isColorDark) {
+                resumeContainer.style.backgroundColor = '#f8c8dc';  
+                resumeContainer.style.color = 'navy';  
+            } else {
+                resumeContainer.style.backgroundColor = 'white'; 
+                resumeContainer.style.color = 'black';  
+            }
+        }
+        
+    </script>
+</body>
+</html>

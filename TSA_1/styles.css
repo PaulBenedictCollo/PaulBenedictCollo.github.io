@@ -1,0 +1,187 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    background-color: #b0e0e6; 
+}
+
+.resume-container {
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: white; 
+    max-width: 1000px;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black; 
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.9s;
+}
+
+.info h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.info p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.about-me {
+    padding: 0px 30px;
+    text-align: justify;
+    border-bottom: 2px solid black; 
+}
+
+.about-me h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    gap: 20px;
+}
+
+.left-section, .right-section {
+    flex-grow: 1;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: transparent; 
+}
+
+.left-section h2, .right-section h2 {
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.left p {
+    text-align: center;
+}
+
+.right ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.right-section li {
+    padding: 5px 0;
+}
+
+button {
+    display: block;
+    margin: 10px 0 20px 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #dcdcdc;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f8c8dc; 
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .about-me {
+        padding: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info h1 {
+        font-size: 20px;
+    }
+
+    .about-me {
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-section, .right-section {
+        padding: 5px;
+        margin: 0;
+        border-bottom: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
