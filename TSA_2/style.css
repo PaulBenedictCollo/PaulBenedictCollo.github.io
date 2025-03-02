@@ -6,59 +6,62 @@
 }
 
 body {
-    background-color: #ADD8E6; 
+    background: linear-gradient(to bottom, #87CEFA, #E6E6FA); /* Blue to Lavender */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+
 }
 
+
 .container {
-    width: 60%;
-    padding: 20px;
-    background-color: #ffffff; 
-    border: 5px solid #FF6F61; 
-    border-radius: 20px;
+    width: 40%;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 4px solid #FF6F61;
+    border-radius: 15px;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .title-section h1 {
     color: #374785;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .title-section h4 {
     color: #ff9a8b;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 hr {
-    border: 3px solid #FF6F61;
+    border: 2px solid #FF6F61;
     width: 100%;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .button-container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    align-items: flex-start; 
+    gap: 6px;
+    align-items: flex-start;
+    padding-left: 20px;
 }
 
 .day-button {
     background: #374785;
     color: #ffffff;
     border: none;
-    padding: 15px;
-    font-size: 20px;
-    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    width: 200px;
-    text-align: center; 
+    width: 160px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,4 +71,3 @@ hr {
     background: #ff9a8b;
     transform: scale(1.1);
 }
-
