@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Food Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="page-title">BEST KOREAN FOOD</h1>
+        <button id="mainMenuButton" class="main-menu-btn">Main Menu</button>
+    </nav>
+
+    <p class="description transparent-box">Get a Glimpse of Korea's Culinary Scene!</p>
+
+    <div id="foodList" class="menu-container">
+        <h2 class="transparent-box">Food Menu</h2>
+        <div class="food-grid">
+            <div class="food-card" onclick="showDetails('Bulgogi', 'Bulgogi, or fire meat, is a popular Korean BBQ dish made from thin slices of marinated beef grilled on a barbecue or stovetop griddle. The marinade, typically made from soy sauce, sugar, sesame oil, garlic, and pepper, gives the beef a sweet and savory flavor. Bulgogi is often served with a side of lettuce leaves, which are used to wrap the meat along with rice and condiments, making it a fun and interactive dining experience.', '../TSA_4/assets/bulgogi.jpg')">
+                <img src="../TSA_4/assets/bulgogi.jpg" alt="Bulgogi">
+                <h3>Bulgogi</h3>
+            </div>
+            <div class="food-card" onclick="showDetails('Japchae', 'Japchae is a beloved noodle dish made from sweet potato starch noodles, also known as glass noodles, stir-fried with a variety of vegetables and sometimes meat, all seasoned with soy sauce and sesame oil. This dish is prized for its chewy texture and slightly sweet and savory flavor. It is often enjoyed during festive occasions and family gatherings.', '../TSA_4/assets/japchae.jfif')">
+                <img src="../TSA_4/assets/japchae.jfif" alt="Japchae">
+                <h3>Japchae</h3>
+            </div>
+            <div class="food-card" onclick="showDetails('Tteokbokki', 'Tteokbokki is a popular street food consisting of cylindrical rice cakes stir-fried in a spicy gochujang-based sauce. Often, fish cakes, boiled eggs, and scallions are added to the dish, enhancing its flavor and texture. Tteokbokki is known for its fiery kick and chewy texture, making it a favorite among those who love spicy food.', '../TSA_4/assets/tteokbokki.webp')">
+                <img src="../TSA_4/assets/tteokbokki.webp" alt="Tteokbokki">
+                <h3>Tteokbokki</h3>
+            </div>
+            <div class="food-card" onclick="showDetails('Bibimbap', 'Bibimbap, meaning mixed rice, is a colourful and nutritious dish that typically consists of rice topped with a variety of vegetables, a fried egg, and slices of meat, usually beef. The dish is completed with a dollop of gochujang (Korean chili paste) and mixed together just before eating. Bibimbap is both visually appealing and incredibly satisfying, offering a balanced meal in one bowl.', '../TSA_4/assets/bibimbap.webp')">
+                <img src="../TSA_4/assets/bibimbap.webp" alt="Bibimbap">
+                <h3>Bibimbap</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Food Details Section -->
+    <div id="foodDetails" class="details hidden">
+        <div class="details-container">
+            <h2 id="foodTitle"></h2>
+            <img id="foodImage" src="" alt="">
+            <p id="foodDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
