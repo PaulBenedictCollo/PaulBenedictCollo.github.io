@@ -9,8 +9,8 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding-top: 80px; /* Prevent content from hiding under navbar */
-    color: white; /* Changed all text to white */
+    padding-top: 80px; 
+    overflow-x: hidden; 
 }
 
 /* Navbar */
@@ -19,13 +19,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Made it black with the same transparency */
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 40px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
     z-index: 1000;
 }
 
@@ -34,8 +34,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    margin-right: auto; /* Move "BEST KOREAN FOOD" more to the right */
-    margin-left: 20px;
+    margin-left: 40px; 
 }
 
 /* Main Menu Button */
@@ -47,7 +46,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 50px; /* Move more to the left */
+    margin-left: 40px; 
 }
 
 .navbar .main-menu-btn:hover {
@@ -56,17 +55,18 @@ body {
 
 /* Transparent Content Box */
 .transparent-box {
-    background: rgba(0, 0, 0, 0.8); /* Made it black with the same transparency */
+    background: rgba(0, 0, 0, 0.8);
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
+    color: white;
 }
 
 /* Description */
 .description {
     margin-top: 70px;
     font-size: 18px;
-    color: white; /* Changed text to white */
+    color: white;
     text-align: center;
     font-style: italic;
 }
@@ -75,22 +75,36 @@ body {
 .menu-container {
     text-align: center;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
+/* Food Grid (Horizontal Line Layout) */
 .food-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    overflow-x: hidden; 
+    padding-bottom: 20px;
+    width: auto; 
+    max-width: 90%;
 }
 
+/* Food Card */
 .food-card {
-    background: rgba(0, 0, 0, 0.9); /* Made food containers black */
-    padding: 30px; /* Increased size */
+    width: 250px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
+    position: relative; 
 }
 
 .food-card:hover {
@@ -98,15 +112,21 @@ body {
 }
 
 .food-card img {
-    width: 150px; /* Made images bigger */
+    width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .food-card h3 {
-    color: white; /* Changed text to white */
-    font-size: 20px; /* Increased text size */
+    color: white;
+    font-size: 20px;
+}
+
+/* Remove Footer Navigation Pop-up */
+.food-card:focus,
+.food-card:hover {
+    outline: none;
 }
 
 /* Food Details */
@@ -114,35 +134,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto; /* Remove full-page height */
-    position: relative; /* No fixed overlay */
-    top: auto;
-    left: auto;
+    height: auto;
+    position: relative;
     width: 100%;
-    background: transparent; /* Remove dark overlay */
+    background: transparent;
     padding-top: 20px;
 }
 
 .details-container {
-    background: rgba(0, 0, 0, 0.9); /* Made details container black */
+    background: rgba(0, 0, 0, 0.9);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     max-width: 400px;
-}
-
-.details-container h2,
-.details-container p {
-    color: white; /* Changed text to white */
+    color: white;
 }
 
 .details img {
-    width: 250px; /* Increased image size */
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
 
+/* Hide Unwanted Elements */
 .hidden {
     display: none;
 }
